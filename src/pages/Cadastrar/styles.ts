@@ -15,13 +15,13 @@ export const Section = styled.section`
     font-size: 2rem;
   }
   form {
-    background-color: ${colors.thirdLight};
-    border: 0.2rem solid ${colors.third};
+    background-color: ${colors.white};
+    border: 0.2rem solid ${colors.black};
     border-radius: 1rem;
     padding: 1.5rem;
     div {
       background-color: ${colors.white};
-      border: 0.15rem solid ${colors.third};
+      border: 0.15rem solid ${colors.black};
       border-radius: 0.6rem;
       display: flex;
       margin: 0.5rem 0;
@@ -29,7 +29,7 @@ export const Section = styled.section`
         height: 3rem;
         width: 3rem;
         padding: 0.3rem;
-        color: ${colors.third};
+        color: ${colors.secondary};
       }
       input {
         width: 100%;

@@ -7,7 +7,11 @@ export const Cabecalho = styled.header`
   picture svg {
     height: 6rem;
     width: 6rem;
+    margin: 1rem;
   }
+  header div.Titulo{
+  height: 106px;
+}
   nav {
     width: 100%;
     display: flex;
