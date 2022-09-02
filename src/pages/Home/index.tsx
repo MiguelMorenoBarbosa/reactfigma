@@ -1,7 +1,8 @@
 import React from "react";
-import principal from "assets/img/Group 2.jpg";
+import principal from "assets/img/principal.png";
 import * as S from "./styles";
 import { CardComponent } from "components";
+import dados from "../../services/dados";
 
 
 const Home = () => {
@@ -9,6 +10,9 @@ const Home = () => {
     <S.Home>
       <picture>
         <img src={principal} alt="Imagens principais" />
+        <aside>
+            {dados && dados.map((item) => <CardComponent dados={item} />)}
+          </aside>
       </picture>
     </S.Home>
   );

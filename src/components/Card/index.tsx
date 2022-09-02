@@ -13,8 +13,8 @@ const Card = ({ dados }: ICard) => {
               {dados.nome} - {dados.data}
             </>
           </h4>
-          <h3>Título: {dados.titulo}</h3>
-          <h3>Mensagem: {dados.mensagem}</h3>
+          <h3>Autor: {dados.titulo}</h3>
+          <h3>Músico: {dados.mensagem}</h3>
           <div>
             {dados.topico.map((topic) => (
               <span key={topic.id}>{topic.item}</span>

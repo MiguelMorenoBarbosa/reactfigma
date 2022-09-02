@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { colors } from "styles/GlobalStyle"
 
 export const Card = styled.div`
+  
   div {
     background-color: ${colors.thirdLight};
     border-radius: 0.5rem;
@@ -17,6 +18,11 @@ export const Card = styled.div`
         padding: 0.4rem;
         margin: 0 0.4rem 0 0;
       }
+    }
+    aside {
+      display: flex;
+      grid-template-columns: auto auto auto auto;
+      gap: 0.5rem;
     }
   }
 `
