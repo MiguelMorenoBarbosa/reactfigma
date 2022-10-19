@@ -28,17 +28,29 @@ const Menu = () => {
         </ul>
       </nav>
       <nav>
-        <ul>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/cadastrar">Cadastrar</Link>
-          </li>
-        </ul>
+      {
+          user ? (
+            <ul>
+              <li>
+                <Link to="/adm/message">Mensagem</Link>
+              </li>
+              <li>
+                <button onClick={logout}>{user.name} <GrLogout /></button>
+              </li>
+            </ul>
+          ) : (
+            <ul>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/cadastrar">Cadastrar</Link>
+              </li>
+            </ul>
+          )
+        }
       </nav>
-    </S.Cabecalho>
+    </S.Cabecalho >
   );
 };
-
 export default Menu;
