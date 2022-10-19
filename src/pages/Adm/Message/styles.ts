@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { colors } from "styles/GlobalStyle"
-import React from "react"
 
 export const Main = styled.main`
   div {
